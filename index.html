@@ -1,1 +1,31 @@
-aaa
+
+<style>
+.scroll-snap-container {
+  height: calc(100vh - 50px);
+  width: 100%;
+
+  display: block;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;  
+}
+.snap-area {
+  scroll-snap-align: start;
+  height: 450px;
+}
+</style>
+
+<body>
+  <div class="scroll-snap-container">
+    <div class="snap-area">1</div>
+    <div class="snap-area">2</div>
+    <div class="snap-area">3</div>
+    <div class="snap-area">4</div>
+    <div class="snap-area">5</div>
+    <div class="snap-area">6</div>
+    <div class="snap-area">7</div>
+  </div>
+</body>
+
+
